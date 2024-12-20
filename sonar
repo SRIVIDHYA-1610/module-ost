@@ -1,0 +1,15 @@
+sonar qube
+   <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <sonar.projectKey>mvn_pro</sonar.projectKey>
+    <sonar.host.url>http://localhost:9000</sonar.host.url>
+    <sonar.login>sqp_1d2581e8aa355e2aece6d8db36107d0da143a386</sonar.login>
+  </properties>
+
+  <plugin>
+        <groupId>org.sonarsource.scanner.maven</groupId>
+        <artifactId>sonar-maven-plugin</artifactId>
+        <version>3.9.1.2184</version>
+  </plugin>
+
+   mvn clean verify sonar:sonar -D"sonar.token=sqp_1d2581e8aa355e2aece6d8db36107d0da143a386"
